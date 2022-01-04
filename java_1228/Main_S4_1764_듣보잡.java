@@ -11,7 +11,7 @@ public class Main_S4_1764_µË∫∏¿‚ {
 
 	public static int N, M;
 	public static String[] neverHeardOf, neverSeen;
-	public static ArrayList<String> dbj = new ArrayList<>();
+	public static ArrayList<String> dbjs = new ArrayList<>();
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
@@ -33,14 +33,14 @@ public class Main_S4_1764_µË∫∏¿‚ {
 		Arrays.sort(neverSeen);
 
 		for (int i = 0; i < M; i++) {
-			if(Arrays.binarySearch(neverHeardOf, neverSeen[i])>=0) {
-				dbj.add(neverSeen[i]);
+			if (Arrays.binarySearch(neverHeardOf, neverSeen[i]) >= 0) {
+				dbjs.add(neverSeen[i]);
 			}
 		}
-		
-		System.out.println(dbj.size());
-		for(String d: dbj) {
-			System.out.println(d);
+
+		System.out.println(dbjs.size());
+		for (String dbj : dbjs) {
+			System.out.println(dbj);
 		}
 	}
 
